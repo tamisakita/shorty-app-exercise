@@ -5,12 +5,12 @@ mongoose.connect('mongodb://localhost/shorty-database', { useUnifiedTopology: tr
   .then(() => {
     console.log('Conectado no banco de dados!');
 
-    // const newUser = {
-    //   fullName: 'Patricia',
-    //   email: 'patricia@patricia.com.br',
-    //   cpf: '123.456.789-00',
-    //   password: '123456',
-    // };
+    const newUser = {
+      fullName: 'Patricia',
+      email: 'patricia@patricia.com.br',
+      cpf: '123.456.789-00',
+      password: '123456',
+    };
 
     // User.create(newUser)
     //   .then((user) => {

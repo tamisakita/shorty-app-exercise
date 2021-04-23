@@ -1,0 +1,54 @@
+<h1>signup</h1>
+
+<form action="/signup" method="post">
+  <div>
+    <label for="fullName">Nome Completo</label>
+    <input type="text" name="fullName" id="fullName" placeholder="Digite o seu nome completo">
+    
+    {{#if fullNameError}}
+      <span>{{fullNameError}}</span>
+    {{/if}}
+  </div>
+
+  <div>
+    <label for="email">E-mail</label>
+    <input type="text" name="email" id="email" placeholder="Digite o seu e-mail">
+    
+    {{#if emailError}}
+      <span>{{emailError}}</span>
+    {{/if}}
+  </div>
+
+  <div>
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+
+    {{#if cpfError}}
+      <span>{{cpfError}}</span>
+    {{/if}}
+  </div>
+
+  <div>
+    <label for="password">Senha</label>
+    <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+
+    {{#if passwordError}}
+      <span>{{passwordError}}</span>
+    {{/if}}
+  </div>
+
+  <div>
+    <label for="confirmationPassword">Confirmação de Senha</label>
+    <input type="password" name="confirmationPassword" id="confirmationPassword" placeholder="Confirmação de Senha">
+
+    {{#if confirmationPasswordError}}
+      <span>{{confirmationPasswordError}}</span>
+    {{/if}}
+  </div>
+
+  <button type="submit">Cadastrar</button>
+
+  <a href="/login">
+    <button type="button">Entrar com a minha conta</button>
+  </a>
+</form>

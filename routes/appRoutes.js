@@ -8,7 +8,7 @@ router.get('/dashboard', async (request, response) => {
   try {
     const data = await Url.find({ owner: '60808225b7b57b36d34820e6' }).populate('owner');
 
-    console.log(data);
+    // console.log(data);
 
     response.render('dashboard', { data, owner: data[0].owner });
   } catch (error) {
